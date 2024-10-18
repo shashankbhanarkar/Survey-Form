@@ -1,0 +1,156 @@
+/* Reset margins, paddings, and set universal box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Use Arial font for the entire page */
+}
+
+/* Create a full-screen background with an image and gradient overlay */
+body::before {
+    content: ''; /* Empty content to create a pseudo-element */
+    position: fixed; /* Fixed position to ensure it covers the whole background */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Places the background behind all other elements */
+    width: 100%;
+    height: 100%; /* Ensure the pseudo-element covers the entire viewport */
+    background: #0b0b55; /* Base dark blue background color */
+    background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)), 
+    url('https://img.freepik.com/free-photo/colleagues-studying-together-during-group-study_23-2149211086.jpg');
+    /* Apply gradient overlay and background image */
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-position: center; /* Center the background image */
+}
+
+/* Style the header section (title and description) */
+header {
+    text-align: center; /* Center align the text in the header */
+    padding: 50px; /* Add padding around the header */
+    color: #f3f3f3; /* Light color for header text */
+}
+
+/* Style for the main title in the header */
+header h1 {
+    font-size: 2.2rem; /* Increase the font size of the title */
+    line-height: 1.4; /* Adjust line spacing */
+    font-weight: lighter; /* Use a lighter font weight */
+}
+
+/* Style for the subtitle (description) in the header */
+header p {
+    font-size: 1.2rem; /* Increase font size for the description */
+    margin-top: 5px; /* Add small margin to separate from the title */
+}
+
+/* Styling the main form container */
+.Survey-Form {
+    text-align: center; /* Center the form text */
+    width: 50%; /* Set form width to 50% of the viewport */
+    margin: 0 auto; /* Center the form horizontally */
+    background-color: #0b0b55; /* Dark blue background for the form */
+    color: #fff; /* White text color */
+    padding: 50px; /* Add padding inside the form */
+    border: none; /* Remove any borders */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Style individual form groups for better alignment and spacing */
+.Survey-Form .form-group {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    text-align: start; /* Align text to the left */
+    font-size: large; /* Larger font size for labels */
+    padding: 10px 0; /* Add vertical padding to each form group */
+}
+
+/* Style for the name input field */
+.form-group #name {
+    padding: 10px; /* Add padding inside the input */
+    width: 100%; /* Make the input full width */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners for the input */
+    line-height: 1.2; /* Adjust line height */
+    font-size: 1rem; /* Standard font size */
+    margin: 10px 0; /* Add margin around the input */
+}
+
+/* Style for the email input field */
+.form-group #email {
+    padding: 10px; /* Add padding inside the input */
+    width: 100%; /* Make the input full width */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners for the input */
+    line-height: 1.2; /* Adjust line height */
+    font-size: 1rem; /* Standard font size */
+    margin: 10px 0; /* Add margin around the input */
+}
+
+/* Style for the age input field */
+.form-group #age {
+    padding: 10px; /* Add padding inside the input */
+    width: 100%; /* Make the input full width */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners for the input */
+    line-height: 1.2; /* Adjust line height */
+    font-size: 1rem; /* Standard font size */
+    margin: 10px 0; /* Add margin around the input */
+}
+
+/* Style dropdown fields (select inputs) */
+.form-group .dropdown {
+    padding: 10px;
+    width: 100%; /* Full width dropdown */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+    line-height: 1.2;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Style for radio buttons */
+.form-group .radio {
+    min-width: 1rem; /* Set minimum size for the radio button */
+    min-height: 1rem;
+    margin-right: 7px; /* Add space between radio button and label text */
+}
+
+/* Style for checkboxes */
+.form-group .checkbox {
+    min-width: 1rem; /* Set minimum size for the checkbox */
+    min-height: 1rem;
+    margin-right: 7px; /* Add space between checkbox and label text */
+}
+
+/* General margin around input elements */
+.form-group input {
+    margin: 10px 0;
+}
+
+/* Align label text with input elements */
+.form-group label {
+    display: flex; /* Flexbox for better alignment */
+    align-items: center; /* Center the label text vertically with the input */
+}
+
+/* Style for the textarea input (comments) */
+.form-group #comments {
+    width: 100%; /* Full width textarea */
+    height: 8rem; /* Set height for the textarea */
+    padding: 10px; /* Add padding inside */
+    font-size: 1rem;
+    margin: 10px 0; /* Add margin around the textarea */
+}
+
+/* Style for the submit button */
+.form-group button {
+    width: 100%; /* Full width button */
+    border: none; /* Remove button borders */
+    padding: 10px; /* Add padding inside the button */
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.4; /* Adjust line height */
+    background-color: #37Af65; /* Green background for the button */
+    color: #fff; /* White text color */
+    border-radius: 2px; /* Slightly rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
